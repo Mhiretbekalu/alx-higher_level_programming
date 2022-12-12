@@ -1,0 +1,45 @@
+============================
+A test doc for my_list.py
+=============================
+
+importing MyList function
+
+::
+
+>>> MyList = __import__('1-my_list').MyList 
+
+how to use
+::
+>>> my_list = MyList()
+>>> my_list.append(10)
+>>> my_list.append(20)
+>>> my_list.append(40)
+>>> my_list.append(30)
+>>> my_list.append(50)
+>>> print(my_list)
+[10, 20, 40, 30, 50]
+
+>>> my_list.print_sorted()
+[10, 20, 30, 40, 50]
+
+>>> print(my_list)
+[10, 20, 40, 30, 50]
+
+>>> my_list = MyList()
+>>> print(my_list)
+[]
+>>> my_list.print_sorted()
+[]
+
+>>> my_list.append(-1)
+>>> my_list.append(-5)
+>>> my_list.append(-3)
+
+>>> print(my_list)
+[-1, -5, -3]
+
+>>> my_list.print_sorted()
+[-5, -3, -1]
+
+>>> print(my_list)
+[-1, -5, -3]
